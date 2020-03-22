@@ -1,0 +1,57 @@
+{
+    "name": "code-resume",
+    "version": "1.0.0",
+    "description": "",
+    "private": true,
+    "scripts": {
+        "start": "npm run build && node server",
+        "start-dev": "webpack-dev-server --config ./webpack.config.dev",
+        "build": "webpack --config ./webpack.config.prod"
+    },
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "compression": "^1.7.4",
+        "express": "^4.17.1",
+        "react": "latest",
+        "react-dom": "latest",
+        "react-router-dom": "^5.1.2",
+        "webpack": "latest"
+    },
+    "devDependencies": {
+        "@babel/core": "latest",
+        "@babel/preset-env": "latest",
+        "@babel/preset-react": "^7.8.3",
+        "babel-eslint": "^10.1.0",
+        "babel-loader": "latest",
+        "eslint": "^6.8.0",
+        "eslint-loader": "latest",
+        "framer-motion": "^1.9.1",
+        "html-webpack-plugin": "latest",
+        "react-svg-loader": "^3.0.3",
+        "styled-components": "^5.0.1",
+        "terser-webpack-plugin": "latest",
+        "webpack": "latest",
+        "webpack-cli": "latest",
+        "webpack-dev-server": "latest",
+        "webpack-pwa-manifest": "^4.2.0",
+        "workbox-webpack-plugin": "^5.0.0"
+    },
+    "eslintConfig": {
+        "parser": "babel-eslint",
+        "parserOptions": {
+            "ecmaVersion": 6,
+            "sourceType": "module",
+            "allowImportExportEverywhere": true,
+            "ecmaFeatures": {
+                "jsx": true
+            }
+        }
+    },
+    "babel": {
+        "presets": [
+            "@babel/preset-env",
+            "@babel/preset-react"
+        ]
+    }
+}
